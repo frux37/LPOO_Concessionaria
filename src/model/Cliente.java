@@ -9,5 +9,5 @@ package model;
  * @author 20212pf.cc0012
  */
 public class Cliente extends Pessoa{
-    
+    private String nome;
 }

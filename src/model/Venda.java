@@ -13,10 +13,50 @@ import java.time.LocalDateTime;
 public class Venda {
     private LocalDateTime dataVenda;
     private double valorVenda;
+    FormaContrato formaContrato;
+    FormaPgto formaPgto;
+    Cliente cliente;
+    Vendedor vendedor;
+    Veiculo veiculo;
 
-    @Override
-    public String toString() {
-        return "Venda{" + "dataVenda=" + dataVenda + ", valorVenda=" + valorVenda + '}';
+    public FormaContrato getFormaContrato() {
+        return formaContrato;
+    }
+
+    public void setFormaContrato(FormaContrato formaContrato) {
+        this.formaContrato = formaContrato;
+    }
+
+    public FormaPgto getFormaPgto() {
+        return formaPgto;
+    }
+
+    public void setFormaPgto(FormaPgto formaPgto) {
+        this.formaPgto = formaPgto;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Vendedor getVendedor() {
+        return vendedor;
+    }
+
+    public void setVendedor(Vendedor vendedor) {
+        this.vendedor = vendedor;
+    }
+
+    public Veiculo getVeiculo() {
+        return veiculo;
+    }
+
+    public void setVeiculo(Veiculo veiculo) {
+        this.veiculo = veiculo;
     }
 
     public LocalDateTime getDataVenda() {
@@ -34,4 +74,10 @@ public class Venda {
     public void setValorVenda(double valorVenda) {
         this.valorVenda = valorVenda;
     }
+
+    @Override
+    public String toString() {
+        return "Venda{" + "dataVenda=" + dataVenda + ", valorVenda=" + valorVenda + ", formaContrato=" + formaContrato + ", formaPgto=" + formaPgto + ", cliente=" + cliente + ", vendedor=" + vendedor + ", veiculo=" + veiculo + '}';
+    }
+    
 }

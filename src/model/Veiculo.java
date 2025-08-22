@@ -17,7 +17,25 @@ public class Veiculo {
 
     @Override
     public String toString() {
-        return "Veiculo{" + "placa=" + placa + ", cor=" + cor + ", anoFabricacao=" + anoFabricacao + ", anoModelo=" + anoModelo + ", valor=" + valor + '}';
+        return "Veiculo{" + "placa=" + placa + ", cor=" + cor + ", anoFabricacao=" + anoFabricacao + ", anoModelo=" + anoModelo + ", valor=" + valor + ", marca=" + marca + ", modelo=" + modelo + '}';
+    }
+    Marca marca;
+    Modelo modelo;
+
+    public Marca getMarca() {
+        return marca;
+    }
+
+    public void setMarca(Marca marca) {
+        this.marca = marca;
+    }
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
     }
 
     public String getPlaca() {

@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package model;
+package controller;
 
 /**
  *
- * @author 20212pf.cc0012
+ * @author CHARLES
  */
-public class Cliente extends Pessoa{
+public class VendedorController {
     
 }
